@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+.imagebox{ 
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	
+}
+.imagebox img{
+	max-width: 20rem;
+	height: 200px;
+}
+
+.imagebox-desc{    
+    text-align: center;
+    font-size: 18px;
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    color: mintcream;
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.imagebox:hover img {
+    opacity: 0.8;
+}
+
+.imagebox:hover .imagebox-desc{
+    padding-bottom: 10%;
+}
